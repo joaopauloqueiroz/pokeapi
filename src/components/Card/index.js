@@ -51,7 +51,9 @@ export default function SimpleCard({ data }) {
         >
           <Button
             size="small"
-            onClick={() => history.push("/details", { id: data.id })}
+            onClick={() =>
+              history.push("/details", { id: data.id, data: data })
+            }
           >
             {data.name}
           </Button>

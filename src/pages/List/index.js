@@ -59,7 +59,7 @@ export default function List() {
         }
       >
         {value.map(item => (
-          <Card key={item.id} data={item} />
+          <Card key={String(item.name)} data={item} />
         ))}
       </InfiniteScroll>
     </div>
